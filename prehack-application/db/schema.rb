@@ -31,6 +31,10 @@ ActiveRecord::Schema.define(version: 20151222220739) do
     t.string   "about_yourself"
     t.string   "interest_in_prehack"
     t.string   "how_did_you_hear_about_us"
+    t.string   "blog_title_1"
+    t.string   "blog_explanation_1"
+    t.string   "blog_title_2"
+    t.string   "blog_explanation_2"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
   end
