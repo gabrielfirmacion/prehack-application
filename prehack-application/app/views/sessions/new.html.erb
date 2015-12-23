@@ -1,0 +1,10 @@
+<h1>Enter your phone number to continue your progress</h1>
+
+<%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+<% end %>
+
