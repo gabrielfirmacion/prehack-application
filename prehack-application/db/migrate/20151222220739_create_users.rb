@@ -18,6 +18,10 @@ class CreateUsers < ActiveRecord::Migration
       t.string :about_yourself
       t.string :interest_in_prehack
       t.string :how_did_you_hear_about_us
+      t.string :blog_title1
+      t.string :blog_explanation1
+      t.string :blog_title2
+      t.string :blog_explanation2
 
       t.timestamps null: false
     end

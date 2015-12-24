@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 
     get    'login'   => 'sessions#new'
     post   'login'   => 'sessions#create'
-    resources :users
+    resources :users do
+      resources :part1, :part2
+    end
 
     root 'welcome#index'
   end

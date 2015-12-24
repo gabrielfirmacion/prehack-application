@@ -1,3 +1,4 @@
+
 <p>
   Hey, <%= @user.first_name %>
 </p>
@@ -17,7 +18,7 @@ You have written a blog post for this audience and plan to publish it on the com
 
 <h3>Read the blog post content (see below).</h3>
 <p>1. Read the blog post content (see below).</p>
-<p>2. Submit a blog post title with the form below.</p>
+<p>2. Submit a blog post title</p>
 <!-- BLOG -->
 <h3>[Blog Post Title]</h3>
 <p>Chances are you didn’t buy airfare and shell out for a tour guide to look at the backs of tourists’ heads. You embarked in search of a more authentic travel experience, but that can be hard or impossible to get without the insights of a well seasoned travel expert.</p>
@@ -33,7 +34,8 @@ You have written a blog post for this audience and plan to publish it on the com
 <p><strong>3. Expert Guides Save Precious Time.</strong></p>
 <p>Without a doubt, expert guides are well connected, know the system, and can find travelers some serious savings on airfare, lodging, and transit. But perhaps even more importantly, they can coordinate itineraries that cut down on transit time, and turn it into more free time for experience. In major metropolitan areas, a seasoned guide knows the best mode of transportation for getting from A to B, and everything worthwhile that might fall in between.</p>
 
-<!-- Put form here -->
+<!-- Put link to form here -->
+<%= link_to "Submit a blog post title", user_part1_index_path(@user.id) %>
 
 
 
