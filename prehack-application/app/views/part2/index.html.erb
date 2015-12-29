@@ -1,1 +1,24 @@
-part 2 here
+<h1>Thanks for submitting your work for Do #1! </h1>
+<h2>Do Learn Do involves a couple more steps, which you will find here.</h2><br>
+
+<h2>Step 1: Learn</h2>
+<p>Read this <a href="https://docs.google.com/document/d/1yVaDp3XmwDUotFFc8EEzwE82uR5zjdtvW6Ccz3zM1DY/edit">guide</a> to learn the best practices for crafting an engaging blog post title.</p>
+
+<h2>Step 2: Do</h2>
+<p>Now that you’ve learned from step 2 above, give the exercise a second try by submitting this form.</p>
+<%= form_for :user, url: user_part2_index_path(@user.id) do |f| %>
+
+ <p>
+    <%= f.label :blog_title %><br>
+    <%= f.text_field :blog_title2 %>
+ </p>
+
+ <p>
+    <%= f.label :blog_explanation %><br>
+    <%= f.text_area :blog_explanation2%>
+ </p>
+
+
+<%= f.submit "Submit" %>
+
+<% end %>
