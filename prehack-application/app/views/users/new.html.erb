@@ -1,0 +1,101 @@
+<h1> create user here</h1>
+
+<%= form_for :user, url: users_path do |f| %>
+<!-- Basic Info -->
+<h2>Basic Info</h2>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :phone_number %><br>
+    <%= f.text_field :phone_number %>
+  </p>
+
+  <p>
+    <%= f.label :date_of_birth %><br>
+    <p>MM/DD/YYYY</p>
+    <%= f.text_field :date_of_birth %>
+  </p>
+
+  <p>
+    <%= f.label :zip_code %><br>
+    <%= f.text_field :zip_code %>
+  </p>
+
+  <p>
+    <%= f.label :LinkedIn_Url %><br>
+    <p>must be publicly accessible</p>
+    <%= f.text_field :LinkedIn_Url %>
+  </p>
+
+  <p>
+    <%= f.label :other_websites %><br>
+    <p>e.g. Personal website, Twitter, etc.</p>
+    <%= f.text_field :other_websites %>
+  </p>
+<!-- Education and Employment  -->
+<h2>Education and Employment</h2>
+
+  <p>
+    <%= f.label :undergraduate_college %><br>
+    <p>Type "none" if not applicable.</p>
+    <%= f.text_field :undergraduate_college %>
+  </p>
+
+  <p>
+    <%= f.label :graduate_college %><br>
+    <p>Type "none" if not applicable.</p>
+    <%= f.text_field :graduate_college %>
+  </p>
+
+  <p>
+    <%= f.label :other_educational_information %><br>
+    <p>Certificates or related courses relevant to your application</p>
+    <%= f.text_field :other_educational_information %>
+  </p>
+
+   <p>
+    <%= f.label :employment_status %><br>
+    <%= f.select :employment_status, [['Self-Employed','self-employed'],['Employed','employed'],['Unemployed','unemployed'], ['Student', 'student']] %>
+  </p>
+
+  <p>
+    <p>Are you legally authorized to work in the US?</p>
+    <%= f.select :legal_status, [['Yes','yes'],['No','no']] %>
+  </p>
+
+  <p>
+    <p>Describe any prior experience and skills relating to marketing (if any).</p><br>
+    <%= f.text_area :prior_experience %>
+  </p>
+
+
+<!-- About PreHack -->
+
+<h2>About PreHack</h2>
+
+<p>Tell us about yourself.</p>
+  <%= f.text_area :about_yourself %>
+
+<p>Why are you interested in PreHack?</p>
+  <%= f.text_area :interest_in_prehack %>
+
+<p>How did you hear about us?</p>
+  <%= f.text_area :how_did_you_hear_about_us %>
+
+<p>
+  <%= f.submit %>
+</p>
+<% end %>

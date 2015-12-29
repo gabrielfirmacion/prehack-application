@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: MyString
+  date_of_birth: MyString
+  zip_code: MyString
+  LinkedIn_Url: MyString
+  other_websites: MyString
+  undergraduate_college: MyString
+  graduate_college: MyString
+  other_education_information: MyString
+  employment_status: MyString
+  legal_status: MyString
+  prior_experience: MyString
+  about_yourself: MyString
+  interest_in_prehack: MyString
+  how_did_you_hear_about_us: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: MyString
+  date_of_birth: MyString
+  zip_code: MyString
+  LinkedIn_Url: MyString
+  other_websites: MyString
+  undergraduate_college: MyString
+  graduate_college: MyString
+  other_education_information: MyString
+  employment_status: MyString
+  legal_status: MyString
+  prior_experience: MyString
+  about_yourself: MyString
+  interest_in_prehack: MyString
+  how_did_you_hear_about_us: MyString
